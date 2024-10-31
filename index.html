@@ -10,7 +10,7 @@
 <!------Navigation Menu------>
   <nav class="navbar">
     <div class="logo-input-box">
-      <img src="images/logo.jpeg" class="logo">
+      <a href="index.html"><img src="images/logo.jpeg" class="logo"></a>
       <div class="search-box">
         <img src="images/search.png" class="search">
         <input type="text" placeholder="Search">
@@ -18,7 +18,7 @@
     </div>
     <ul>
       <li>
-        <a href="#"><img src="images/home.png"><span>Home</span></a>
+        <a href="index.html"><img src="images/home.png"><span>Home</span></a>
       </li>
       <li>
         <a href="#"><img src="images/person.jpeg"><span>My Network</span></a>
@@ -35,7 +35,40 @@
     </ul>
     <div class="profile-details">
       <div class="profile-pic">
-        <img src="images/profile-pic.jpeg" class="online">
+        <img src="images/profile-pic.jpeg" class="online" id="profilePic">
+      </div>
+    </div>
+    <!-----Profile-drop-down-menu----->
+    <div class="profile-menu-wrap" id="profileMenu">
+      <div class="profile-menu">
+        <div class="user-info">
+          <img src="images/profile-pic.jpeg">
+          <div>
+            <h3>Mark Zuckerberg</h3>
+            <a href="profile.html">See Your Profile</a>
+          </div>
+        </div>
+        <hr>
+          <a href="#" class="profile-menu-link">
+            <img src="images/feedback.png">
+            <p>Give Feedback</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/setting.png">
+            <p>Setting & Privacy</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/setting.png">
+            <p>Give Feedback</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/logout.png">
+            <p>Logout</p>
+            <span>></span>
+          </a>
       </div>
     </div>
   </nav>
@@ -44,7 +77,7 @@
    <!--left sidebar-->
     <div class="left-sidebar">
       <div class="cover-profile-user">
-        <img src="images/city.jpeg" width="100%">
+        <img src="images/cover-page.jpeg" width="100%">
         <div class="cover-profile-user-inner">
           <img src="images/profile-pic.jpeg" class="profile-img">
           <h1>Mark Zuckerberg</h1>
@@ -60,33 +93,34 @@
             <a href="# "><img src="images/price.png">My Price</a>
             <a href="#"><img src="images/premium.png">Premium</a>
           </div>
-          <div class="profile-activity">
-            <h3>RECENT</h3>
-            <a href="#"><img src="images/recent.png">Web design & Development</a>
-            <a href="#"><img src="images/recent.png">UI/UX Design</a>
-            <a href="#"><img src="images/recent.png">Frontend</a>
-            <a href="#"><img src="images/recent.png">Fullstock</a>
-            <a href="#"><img src="images/recent.png">Web design & Development</a>
-          </div>
-          <div class="profile-activity">
-            <h3>GROUPS</h3>
-            <a href="#"><img src="images/groups.png">Web Design Group</a>
-            <a href="#"><img src="images/groups.png">HTML & CSS Learner</a>
-            <a href="#"><img src="images/groups.png">Python & JavaScript</a>
-            <a href="#"><img src="images/groups.png">Machine Learning</a>     
-          </div>
-          <div class="profile-activity">
-            <h3>HASHTAG</h3>
-            <a href="#"><img src="images/hashtags.png">Web Development</a>
-            <a href="#"><img src="images/hashtags.png">User Interface</a>
-            <a href="#"><img src="images/hashtags.png">Artificial Intelligence</a>
-          </div>
-          <div class="discover-more">
-            <a href="#">Dicover More</a>
-          </div>
-          <!--end-->
         </div> 
       </div>
+      <div class="profile-activity" id="profileAct">
+        <h3>RECENT</h3>
+        <a href="#"><img src="images/recent.png">Web design & Development</a>
+        <a href="#"><img src="images/recent.png">UI/UX Design</a>
+        <a href="#"><img src="images/recent.png">Frontend</a>
+        <a href="#"><img src="images/recent.png">Fullstock</a>
+        <a href="#"><img src="images/recent.png">Web design & Development</a>
+        <h3>GROUPS</h3>
+        <a href="#"><img src="images/groups.png">Web Design Group</a>
+        <a href="#"><img src="images/groups.png">HTML & CSS Learner</a>
+        <a href="#"><img src="images/groups.png">Python & JavaScript</a>
+        <a href="#"><img src="images/groups.png">Machine Learning</a>
+        <h3>HASHTAG</h3>
+        <a href="#"><img src="images/hashtags.png">Web Development</a>
+        <a href="#"><img src="images/hashtags.png">User Interface</a>
+        <a href="#"><img src="images/hashtags.png">Artificial Intelligence</a>
+        <div class="discover-more">
+          <a href="#">Dicover More</a>
+        </div>
+      </div>
+      <p class="show-more" id="shoreMore">Show more<b>+</b></p>
+  
+             
+     
+      
+      
     </div>
     <!--main content-->  
     <div class="main-content">
@@ -202,8 +236,8 @@
       <!--   Third Post  -->
       <div class="post">
         <div class="author-post">
-          <img src="images/Ohidson1.jpg">
-          <h1>Raji Abdulmujib Ohida</h1>
+          <img src="images/user-7.jpg">
+          <h1>Fabrinzo Romanio</h1>
           <small>CEO codeCraft | Founder softline</small>
           <small>2 hours ago</small>
         </div>
@@ -211,7 +245,7 @@
           organization to help out in the training of their camp code student 
           in teaching the essential courses of web design and Development courses 
           with the fundamental of JavaScript as well</p>
-          <img src="images/post-user1.jpeg" width="100%">
+          <img src="images/freecodecamp.png " width="100%">
           <div class="post-stat">
             <div>
               <img src="images/thumbs_up.png">
@@ -292,5 +326,6 @@
       </div>
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
